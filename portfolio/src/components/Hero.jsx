@@ -104,7 +104,7 @@ export default function Hero({ onOpenResume }) {
             <a href="https://github.com/sakthiprasannam" target="_blank" rel="noreferrer" className="social-link" id="social-github" aria-label="GitHub">
               <i className="fab fa-github" />
             </a>
-            <a href="https://www.linkedin.com/in/sakthiprasannam" target="_blank" rel="noreferrer" className="social-link" id="social-linkedin" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sakthi-prasanna-647b79290/" target="_blank" rel="noreferrer" className="social-link" id="social-linkedin" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in" />
             </a>
             <a href="mailto:mspsakthiprasanna@gmail.com" className="social-link" id="social-email" aria-label="Email">

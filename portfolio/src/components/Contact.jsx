@@ -72,7 +72,7 @@ export default function Contact() {
                 <i className="fab fa-github" />
               </a>
               <a
-                href="https://www.linkedin.com/in/sakthiprasannam"
+                href="https://www.linkedin.com/in/sakthi-prasanna-647b79290/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-link"
