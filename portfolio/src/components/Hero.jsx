@@ -107,7 +107,7 @@ export default function Hero({ onOpenResume }) {
             <a href="https://www.linkedin.com/in/sakthiprasannam" target="_blank" rel="noreferrer" className="social-link" id="social-linkedin" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in" />
             </a>
-            <a href="mailto:mspsakthiprasana@gmail.com" className="social-link" id="social-email" aria-label="Email">
+            <a href="mailto:mspsakthiprasanna@gmail.com" className="social-link" id="social-email" aria-label="Email">
               <i className="fas fa-envelope" />
             </a>
             <a href="tel:+917806977800" className="social-link" id="social-phone" aria-label="Phone">

@@ -39,7 +39,7 @@ export default function ResumeModal({ isOpen, onClose }) {
     <h1>SAKTHI PRASANNA M</h1>
     <div class="contacts">
       <span>📞 +91 7806977800</span>
-      <span>✉️ mspsakthiprasana@gmail.com</span>
+      <span>✉️ mspsakthiprasanna@gmail.com</span>
       <a href="https://www.linkedin.com/in/sakthiprasannam" target="_blank">LinkedIn</a>
       <a href="https://github.com/sakthiprasannam" target="_blank">GitHub</a>
     </div>
@@ -190,7 +190,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <h1 className="resume-name">SAKTHI PRASANNA M</h1>
             <div className="resume-contact-bar">
               <span><i className="fas fa-phone-alt" /> +91 7806977800</span>
-              <span><i className="fas fa-envelope" /> mspsakthiprasana@gmail.com</span>
+              <span><i className="fas fa-envelope" /> mspsakthiprasanna@gmail.com</span>
               <a href="https://www.linkedin.com/in/sakthiprasannam" target="_blank" rel="noreferrer">
                 <i className="fab fa-linkedin" /> LinkedIn
               </a>

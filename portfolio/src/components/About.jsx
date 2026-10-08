@@ -5,7 +5,7 @@ const info = [
   { icon: 'fas fa-graduation-cap', label: 'Degree',      value: 'B.E. CSE (2023–2027)' },
   { icon: 'fas fa-university',     label: 'College',     value: 'Karpagam Academy of Higher Education' },
   { icon: 'fas fa-star',           label: 'Academic',    value: '7.1 / 10 CGPA' },
-  { icon: 'fas fa-envelope',       label: 'Email',       value: 'mspsakthiprasana@gmail.com' },
+  { icon: 'fas fa-envelope',       label: 'Email',       value: 'mspsakthiprasanna@gmail.com' },
   { icon: 'fas fa-phone-alt',      label: 'Phone',       value: '+91 7806977800' },
 ]
 

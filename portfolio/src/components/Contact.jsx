@@ -37,11 +37,11 @@ export default function Contact() {
             </p>
 
             <div className="contact-cards">
-              <a href="mailto:mspsakthiprasana@gmail.com" className="contact-card" id="contact-email">
+              <a href="mailto:mspsakthiprasanna@gmail.com" className="contact-card" id="contact-email">
                 <div className="contact-icon"><i className="fas fa-envelope" /></div>
                 <div>
                   <span className="contact-label">Email</span>
-                  <span className="contact-val">mspsakthiprasana@gmail.com</span>
+                  <span className="contact-val">mspsakthiprasanna@gmail.com</span>
                 </div>
               </a>
               <a href="tel:+917806977800" className="contact-card" id="contact-phone">
@@ -82,7 +82,7 @@ export default function Contact() {
                 <i className="fab fa-linkedin-in" />
               </a>
               <a
-                href="mailto:mspsakthiprasana@gmail.com"
+                href="mailto:mspsakthiprasanna@gmail.com"
                 className="social-link"
                 id="csocial-email"
                 aria-label="Email"
