@@ -13,7 +13,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sakthi Prasanna M - Resume</title>
+  <title>SAKTHI PRASANNA M - Resume</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5; color: #222; padding: 40px; background: #fff; max-width: 850px; margin: 0 auto; }
@@ -168,7 +168,7 @@ export default function ResumeModal({ isOpen, onClose }) {
         {/* Modal Top Bar */}
         <div className="resume-modal-header no-print">
           <div className="resume-modal-title">
-            <i className="fas fa-file-alt" /> Sakthi Prasanna M — Curriculum Vitae
+            <i className="fas fa-file-alt" /> SAKTHI PRASANNA M — Curriculum Vitae
           </div>
           <div className="resume-header-actions">
             <button className="btn btn-primary btn-sm" onClick={handlePrint} title="Print or Save as PDF">

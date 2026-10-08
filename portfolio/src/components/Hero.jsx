@@ -78,7 +78,7 @@ export default function Hero({ onOpenResume }) {
         <div className="home-content">
           <p className="home-greeting">Hello, World! 👋</p>
           <h1 className="home-title">
-            Hi, I'm <span className="highlight">Sakthi Prasanna M</span>
+            Hi, I'm <span className="highlight">SAKTHI PRASANNA M</span>
           </h1>
           <div className="home-role">
             <span className="role-prefix">I'm a </span>
@@ -121,7 +121,7 @@ export default function Hero({ onOpenResume }) {
           <div className="photo-ring" />
           <div className="photo-ring2" />
           <div className="photo-wrapper">
-            <img src="/sakthi.jpg" alt="Sakthi Prasanna M" className="profile-img" />
+            <img src="/sakthi.jpg" alt="SAKTHI PRASANNA M" className="profile-img" />
             <div className="photo-glow" />
           </div>
           <div className="floating-badge badge-1">

@@ -9,9 +9,9 @@ export default function Footer() {
           Sakthi<span>.</span>
         </a>
         <p className="footer-text">
-          Designed &amp; Developed with <i className="fas fa-heart" style={{ color:'#00cfff' }} /> by Sakthi Prasanna
+          Designed &amp; Developed with <i className="fas fa-heart" style={{ color:'#00cfff' }} /> by SAKTHI PRASANNA M
         </p>
-        <p className="footer-copy">© 2026 Sakthi Prasanna. All Rights Reserved.</p>
+        <p className="footer-copy">© 2026 SAKTHI PRASANNA M. All Rights Reserved.</p>
       </div>
     </footer>
   )

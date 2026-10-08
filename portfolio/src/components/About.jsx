@@ -1,7 +1,7 @@
 import './About.css'
 
 const info = [
-  { icon: 'fas fa-user',           label: 'Full Name',   value: 'Sakthi Prasanna M' },
+  { icon: 'fas fa-user',           label: 'Full Name',   value: 'SAKTHI PRASANNA M' },
   { icon: 'fas fa-graduation-cap', label: 'Degree',      value: 'B.E. CSE (2023–2027)' },
   { icon: 'fas fa-university',     label: 'College',     value: 'Karpagam Academy of Higher Education' },
   { icon: 'fas fa-star',           label: 'Academic',    value: '7.1 / 10 CGPA' },
@@ -23,7 +23,7 @@ export default function About({ onOpenResume }) {
           {/* Image */}
           <div className="about-image-col reveal-left">
             <div className="about-img-wrapper">
-              <img src="/sakthi.jpg" alt="Sakthi Prasanna M" className="about-img" />
+              <img src="/sakthi.jpg" alt="SAKTHI PRASANNA M" className="about-img" />
               <div className="about-exp-badge">
                 <span className="exp-number">7.1</span>
                 <span className="exp-label">CGPA / 10</span>
@@ -35,7 +35,7 @@ export default function About({ onOpenResume }) {
           <div className="about-text-col reveal-right">
             <h3 className="about-subtitle">Computer Science &amp; Engineering Student &amp; Developer</h3>
             <p className="about-desc">
-              I am <strong>Sakthi Prasanna M</strong>, a dedicated Computer Science and Engineering student at{' '}
+              I am <strong>SAKTHI PRASANNA M</strong>, a dedicated Computer Science and Engineering student at{' '}
               <strong>Karpagam Academy of Higher Education</strong>. My objective is to obtain a challenging
               position where I can apply my technical skills, innovative thinking, and problem-solving abilities to
               contribute effectively to organizational success while advancing my professional career.
