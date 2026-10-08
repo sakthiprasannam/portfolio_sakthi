@@ -63,13 +63,23 @@
 .info-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 .info-value  { font-size: 0.88rem; font-weight: 500; color: var(--white); }
 
+.about-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
 @media (max-width: 992px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
   .about-image-col { display: flex; justify-content: center; }
   .about-info-grid { text-align: left; }
+  .about-actions { justify-content: center; }
 }
 @media (max-width: 600px) {
   .about-img { width: 260px; height: 320px; }
   .about-info-grid { grid-template-columns: 1fr; }
+  .about-actions { flex-direction: column; }
 }
+
 

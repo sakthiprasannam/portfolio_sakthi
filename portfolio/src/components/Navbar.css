@@ -85,7 +85,40 @@
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+.desktop-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.mobile-resume-li {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav-resume-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--cyan);
+  color: #050d1a;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
+  .desktop-resume-btn { display: none; }
+  .mobile-resume-li { display: block; }
   .nav-links {
     position: fixed;
     top: var(--nav-h); left: 0; right: 0;

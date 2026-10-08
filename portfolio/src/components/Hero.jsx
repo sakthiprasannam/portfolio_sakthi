@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
 
 const ROLES = [
-  'CSE Student 🎓',
-  'Web Developer 💻',
-  'Problem Solver 🧠',
-  'Python Enthusiast 🐍',
-  'Open Source Fan 🌐',
+  'MERN Stack Developer 💻',
+  'CSE Student (2023-2027) 🎓',
+  'Full Stack Engineer 🚀',
+  'Java & C++ Developer ⚡',
+  'Cloud & Database Enthusiast ☁️',
 ]
 
 function useTyped(roles) {
@@ -17,7 +17,7 @@ function useTyped(roles) {
 
   useEffect(() => {
     const current = roles[roleIndex]
-    let delay = deleting ? 60 : 110
+    let delay = deleting ? 50 : 100
 
     if (!deleting && charIndex === current.length) {
       delay = 1800
@@ -41,7 +41,7 @@ function useTyped(roles) {
   return text
 }
 
-export default function Hero() {
+export default function Hero({ onOpenResume }) {
   const particlesRef = useRef(null)
   const typedText    = useTyped(ROLES)
 
@@ -78,7 +78,7 @@ export default function Hero() {
         <div className="home-content">
           <p className="home-greeting">Hello, World! 👋</p>
           <h1 className="home-title">
-            Hi, I'm <span className="highlight">Sakthi Prasanna</span>
+            Hi, I'm <span className="highlight">Sakthi Prasanna M</span>
           </h1>
           <div className="home-role">
             <span className="role-prefix">I'm a </span>
@@ -86,27 +86,33 @@ export default function Hero() {
             <span className="cursor-blink">|</span>
           </div>
           <p className="home-bio">
-            A passionate 4th-year{' '}
-            <strong>B.E. Computer Science Engineering</strong> student at{' '}
-            <strong>Karpagam Academy of Higher Education</strong>, dedicated
-            to building innovative digital solutions and turning ideas into
-            reality through code.
+            A passionate <strong>B.E. Computer Science and Engineering</strong> student at{' '}
+            <strong>Karpagam Academy of Higher Education</strong> (2023–2027 | 7.1 CGPA),
+            with practical industry internship experience in <strong>MERN Stack</strong> &amp; web development,
+            driven to engineer reliable, scalable software solutions.
           </p>
           <div className="home-buttons">
-            <a href="#contact" className="btn btn-primary" id="hire-me-btn"
-               onClick={e => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior:'smooth' }) }}>
-              <i className="fas fa-paper-plane" /> Hire Me
-            </a>
-            <a href="#projects" className="btn btn-outline" id="projects-btn"
+            <a href="#projects" className="btn btn-primary" id="projects-btn"
                onClick={e => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior:'smooth' }) }}>
-              <i className="fas fa-code" /> View Work
+              <i className="fas fa-layer-group" /> View Projects
             </a>
+            <button className="btn btn-outline" id="hero-resume-btn" onClick={onOpenResume}>
+              <i className="fas fa-file-alt" /> View Resume
+            </button>
           </div>
           <div className="home-socials">
-            <a href="#" className="social-link" id="social-github"  aria-label="GitHub">   <i className="fab fa-github" /></a>
-            <a href="#" className="social-link" id="social-linkedin" aria-label="LinkedIn"> <i className="fab fa-linkedin-in" /></a>
-            <a href="#" className="social-link" id="social-twitter" aria-label="Twitter">  <i className="fab fa-twitter" /></a>
-            <a href="#" className="social-link" id="social-instagram" aria-label="Instagram"><i className="fab fa-instagram" /></a>
+            <a href="https://github.com/sakthiprasannam" target="_blank" rel="noreferrer" className="social-link" id="social-github" aria-label="GitHub">
+              <i className="fab fa-github" />
+            </a>
+            <a href="https://www.linkedin.com/in/sakthiprasannam" target="_blank" rel="noreferrer" className="social-link" id="social-linkedin" aria-label="LinkedIn">
+              <i className="fab fa-linkedin-in" />
+            </a>
+            <a href="mailto:mspsakthiprasana@gmail.com" className="social-link" id="social-email" aria-label="Email">
+              <i className="fas fa-envelope" />
+            </a>
+            <a href="tel:+917806977800" className="social-link" id="social-phone" aria-label="Phone">
+              <i className="fas fa-phone-alt" />
+            </a>
           </div>
         </div>
 
@@ -115,17 +121,17 @@ export default function Hero() {
           <div className="photo-ring" />
           <div className="photo-ring2" />
           <div className="photo-wrapper">
-            <img src="/sakthi.jpg" alt="Sakthi Prasanna" className="profile-img" />
+            <img src="/sakthi.jpg" alt="Sakthi Prasanna M" className="profile-img" />
             <div className="photo-glow" />
           </div>
           <div className="floating-badge badge-1">
-            <i className="fas fa-code" /><span>CSE</span>
+            <i className="fas fa-laptop-code" /><span>MERN Stack</span>
           </div>
           <div className="floating-badge badge-2">
-            <i className="fas fa-graduation-cap" /><span>4th Year</span>
+            <i className="fas fa-graduation-cap" /><span>7.1 CGPA</span>
           </div>
           <div className="floating-badge badge-3">
-            <i className="fas fa-star" /><span>Developer</span>
+            <i className="fas fa-award" /><span>AWS Certified</span>
           </div>
         </div>
       </div>

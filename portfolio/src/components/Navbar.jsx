@@ -2,14 +2,15 @@ import { useState, useEffect } from 'react'
 import './Navbar.css'
 
 const links = [
-  { id: 'home',     label: 'Home'     },
-  { id: 'about',    label: 'About'    },
-  { id: 'skills',   label: 'Skills'   },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact',  label: 'Contact'  },
+  { id: 'home',       label: 'Home'       },
+  { id: 'about',      label: 'About'      },
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills',     label: 'Skills'     },
+  { id: 'projects',   label: 'Projects'   },
+  { id: 'contact',    label: 'Contact'    },
 ]
 
-export default function Navbar() {
+export default function Navbar({ onOpenResume }) {
   const [scrolled,  setScrolled]  = useState(false)
   const [active,    setActive]    = useState('home')
   const [menuOpen,  setMenuOpen]  = useState(false)
@@ -70,9 +71,22 @@ export default function Navbar() {
               </button>
             </li>
           ))}
+          <li className="mobile-resume-li">
+            <button className="nav-resume-btn" onClick={() => { setMenuOpen(false); onOpenResume() }}>
+              <i className="fas fa-file-alt" /> Resume
+            </button>
+          </li>
         </ul>
 
         <div className="nav-actions">
+          <button
+            className="btn btn-outline btn-sm desktop-resume-btn"
+            onClick={onOpenResume}
+            title="View Resume"
+          >
+            <i className="fas fa-file-alt" /> Resume
+          </button>
+
           <button
             className="theme-toggle"
             onClick={toggleTheme}
@@ -95,4 +109,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
