@@ -1,0 +1,12 @@
+.back-to-top {
+  position: fixed; bottom: 30px; right: 30px;
+  width: 46px; height: 46px;
+  background: linear-gradient(135deg, var(--cyan), #0090cc);
+  color: #050d1a; border: none; border-radius: 50%;
+  font-size: 1rem; display: flex; align-items: center; justify-content: center;
+  z-index: 999; box-shadow: 0 6px 20px rgba(0,207,255,0.4);
+  opacity: 0; visibility: hidden; transform: translateY(20px);
+  transition: var(--transition); cursor: pointer;
+}
+.back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { transform: translateY(-4px); }

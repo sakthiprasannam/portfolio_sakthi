@@ -1,0 +1,46 @@
+.contact-section { background: var(--bg-primary); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: start; }
+.contact-info h3 { font-size: 1.8rem; font-weight: 700; margin-bottom: 16px; }
+.contact-info > p { color: var(--text-light); line-height: 1.8; margin-bottom: 30px; }
+.contact-cards { display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px; }
+.contact-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--bg-card); border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm); padding: 16px 20px; transition: var(--transition);
+}
+.contact-card:hover { border-color: var(--cyan); transform: translateX(6px); box-shadow: 0 4px 20px rgba(0,207,255,0.1); }
+.contact-icon {
+  width: 44px; height: 44px; background: var(--cyan-mid);
+  border: 1px solid rgba(0,207,255,0.2); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cyan); font-size: 1rem; flex-shrink: 0;
+}
+.contact-label { display: block; font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+.contact-val   { display: block; font-size: 0.9rem; font-weight: 500; color: var(--white); }
+.contact-socials { display: flex; gap: 12px; }
+
+.contact-form-wrap {
+  background: var(--bg-card); border: 1px solid var(--border-card);
+  border-radius: var(--radius); padding: 36px;
+}
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; }
+.form-group label { font-size: 0.82rem; font-weight: 600; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px; }
+.form-group input,
+.form-group textarea {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 13px 16px;
+  color: var(--white); font-family: var(--font-main); font-size: 0.95rem;
+  outline: none; transition: var(--transition); resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--text-muted); }
+.form-group input:focus,
+.form-group textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,207,255,0.1); }
+
+.btn.success { background: linear-gradient(135deg, #00e5a0, #00b876) !important; }
+
+@media (max-width: 992px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-form-wrap { padding: 24px; }
+}

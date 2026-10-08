@@ -1,0 +1,13 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 36px 30px; text-align: center;
+}
+.footer-container { max-width: 1200px; margin: 0 auto; }
+.footer-logo {
+  font-size: 1.5rem; font-weight: 800; color: var(--white);
+  display: inline-block; margin-bottom: 12px; cursor: pointer;
+}
+.footer-logo span { color: var(--cyan); }
+.footer-text { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
+.footer-copy { font-size: 0.82rem; color: var(--text-muted); opacity: 0.7; }

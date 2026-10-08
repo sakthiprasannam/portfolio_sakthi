@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+/* ============================================
+   DARK MODE (default)
+   ============================================ */
+:root {
+  --bg-primary:    #050d1a;
+  --bg-secondary:  #0a1628;
+  --bg-card:       #0d1f35;
+  --bg-card2:      #0f2342;
+  --cyan:          #00cfff;
+  --cyan-glow:     rgba(0,207,255,0.18);
+  --cyan-mid:      rgba(0,207,255,0.08);
+  --purple:        #7c3aed;
+  --purple-light:  #a855f7;
+  --white:         #f0f6ff;
+  --text-muted:    #7a9cc8;
+  --text-light:    #b0cce8;
+  --border:        rgba(0,207,255,0.15);
+  --border-card:   rgba(0,207,255,0.12);
+  --shadow:        0 8px 32px rgba(0,0,0,0.4);
+  --shadow-cyan:   0 0 30px rgba(0,207,255,0.25);
+  --font-main:     'Outfit', 'Segoe UI', system-ui, sans-serif;
+  --font-code:     'Fira Code', 'Courier New', monospace;
+  --nav-h:         72px;
+  --radius:        14px;
+  --radius-sm:     8px;
+  --transition:    0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ============================================
+   LIGHT MODE
+   ============================================ */
+[data-theme="light"] {
+  --bg-primary:    #f0f4fc;
+  --bg-secondary:  #e2eaf8;
+  --bg-card:       #ffffff;
+  --bg-card2:      #eef3fb;
+  --cyan:          #0284c7;
+  --cyan-glow:     rgba(2,132,199,0.15);
+  --cyan-mid:      rgba(2,132,199,0.08);
+  --purple:        #7c3aed;
+  --purple-light:  #9333ea;
+  --white:         #0f172a;
+  --text-muted:    #64748b;
+  --text-light:    #334155;
+  --border:        rgba(2,132,199,0.2);
+  --border-card:   rgba(2,132,199,0.15);
+  --shadow:        0 8px 32px rgba(0,0,0,0.1);
+  --shadow-cyan:   0 0 30px rgba(2,132,199,0.2);
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-main);
+  background: var(--bg-primary);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.7;
+  cursor: none;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { display: block; max-width: 100%; }
+button { cursor: none; font-family: var(--font-main); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 3px; }
+
+@media (max-width: 768px) {
+  body { cursor: auto; }
+  button { cursor: pointer; }
+}
